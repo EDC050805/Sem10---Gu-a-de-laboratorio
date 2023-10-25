@@ -11,12 +11,11 @@ namespace Sem10___Guía_de_laboratorio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\tTienda de celulares del Sr. Luis");
-            Console.WriteLine("\t********************************\n");
+            Console.WriteLine("    Tienda de celulares del Sr. Luis");
+            Console.WriteLine("    ********************************\n");
             int opcion, VmPhone = 0, VmPad = 0, VMAPBrook = 0, VmWatch = 0, DmPhone = 0, DmPad = 0, DMAPBrook = 0, DmWatch = 0;
             do
             {
-                Console.Clear();
                 opcion = InterfazConsola.PantalladeInicio();
                 string producto = "mPhone 3000";
 
@@ -42,7 +41,7 @@ namespace Sem10___Guía_de_laboratorio
                             ref DMAPBrook, ref DmWatch);
                         break;
                 }
-
+                if (opcion != 5) Console.Clear();
             } while (opcion != 5);
 
             int mPhone = VmPhone - DmPhone;
